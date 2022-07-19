@@ -1,4 +1,10 @@
 object Q5 extends App{
-    def totalRunningTime(easyPaceDistance: Int, tempoDistance: Int): Int = easyPaceDistance * 8 + tempoDistance * 7
-    println(totalRunningTime(4, 3))
+    // Running time for easy phase
+    def easy(x: Int): Int = x*8
+
+    //Running time for tempo phase
+    def tempo(x: Int): Int = x*7
+
+    //The total running time:
+    println(easy(2) + tempo(3) + easy(2))
 }
