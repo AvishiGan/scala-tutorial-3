@@ -9,5 +9,5 @@ object Q4 extends App{
     def shippingCost(x: Int): Double= 3*x + (x-50)*0.75
 
     // The total wholesale cost for books
-    println(totalBooksPrice(60) - discount(bookPrice(60)) + shippingCost(60))
+    println(totalBooksPrice(60) - discount(totalBooksPrice(60)) + shippingCost(60))
 }
