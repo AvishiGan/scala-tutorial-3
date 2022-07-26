@@ -3,11 +3,11 @@ object Q4 extends App{
     def totalBooksPrice(x: Int): Double = x*24.95 // x - number of books
 
     // Discount
-    def discount(totalAmount: Double): Double = totalAmount*0.4
+    def totalDiscount(totalAmount: Double): Double = totalAmount*0.4
 
     // Shipping Cost
-    def shippingCost(x: Int): Double= 3*x + (x-50)*0.75
+    def shippingCost(x: Int): Double= 3*x + (x-50)*0.75  /*first 50 copies -> 3 rupees and each additional copy -> 75 cents*/
 
     // The total wholesale cost for books
-    println(totalBooksPrice(60) - discount(totalBooksPrice(60)) + shippingCost(60))
+    println(totalBooksPrice(60) - totalDiscount(totalBooksPrice(60)) + shippingCost(60))
 }
